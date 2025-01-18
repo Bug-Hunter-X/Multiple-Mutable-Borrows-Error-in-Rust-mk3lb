@@ -1,0 +1,3 @@
+This repository demonstrates a common error in Rust: multiple mutable borrows of the same variable.  The `bug.rs` file contains code that attempts to have two mutable references (`y` and `z`) to the same variable `x` simultaneously. This violates Rust's ownership and borrowing rules, resulting in a compile-time error.
+
+The `bugSolution.rs` file shows a possible solution to the problem using techniques like cloning, using immutable references or restructuring the code to avoid multiple mutable borrows.
